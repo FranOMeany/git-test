@@ -1,0 +1,294 @@
+/* For BOCC Declaration of Compliance Forms */
+
+
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);
+.claro .dijitDialogUnderlay { background: #fff; }
+.dijitPopup { z-index: 1200 !important; } /* Avoid a dropdwon box to be shown behind a dialog box  */
+
+table {
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-color: #3b3b3b3b;
+	border-spacing: 3px;
+	width: 98%;
+	margin: 0px auto;
+	box-shadow: 8px 8px 3px #999999;
+}
+
+table td { 
+	padding: 5px;
+	border-right: solid;
+	border-right-width: thin;
+	border-right-color: #3b3b3b3b;
+	border-left-color: #3b3b3b3b;
+}
+table th { padding: 10px; }
+
+.dijitDialogPaneContentArea td { border-right: none !important; }    /* Override the table border for DOJO dialog */
+
+html, body {
+	height: auto;
+	min-height: 100vh;
+}
+
+body {
+	font-style: normal;
+	line-height: 1.2;
+	font-family: Rubik;
+	font-size: 0.8rem !important;
+	position: relative;
+}
+      
+.bg-bocc {
+	background: #deefff;
+	background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
+	background: -webkit-linear-gradient(top, #deefff 0%,#98bede 100%);
+	background: linear-gradient(to top, #deefff 0%,#98bede 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 );
+	border-radius: 30px 30px 0px 0px;
+}
+
+.text-decoration-underline { text-decoration: underline !important; }
+.mt-minus-1 { margin-top: -1px !important; }
+.bocc-form-footer {
+	position: absolute !important;
+	bottom: 0 !important;
+	width: 100% !important;
+	height: auto !important;
+}
+.formProgDetails { margin-left: 0px !important; }
+.page-break	{ display: none; }
+.bocc-watermark-sample {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='30%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>SAMPLE FORM</text></svg>");
+	background-repeat: no-repeat;
+    background-position: center;
+}
+.bocc-watermark-excluded {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='30%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>EXCLUDED</text></svg>");
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bocc-form-header {
+	border-bottom: 1px solid #3333;
+	box-shadow: 10px 6px 10px rgb(3 3 3 / 25%);
+	-webkit-box-shadow: 10px 6px 10px rgb(3 3 3 / 25%);
+	-moz-box-shadow: 10px 6px 10px rgba(3,3,3,0.25);
+}
+
+#pdcMainSection { margin-top: 1vh; padding-bottom: 80px; }
+
+#boccBusName {  
+	vertical-align: middle;
+	text-align: left;
+	padding: 15px 15px 15px 5px;
+}
+#boccBusAddress {
+	vertical-align: middle;
+	text-align: right;
+	padding: 10px;
+}
+#Q0InstructionsDiv.open { display: block !important; }
+.bocc-footer { box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8); }
+
+.bocc-qrcode-prg {
+	position: absolute;
+	margin-top: -7.5rem;
+	z-index: -1;
+}
+
+/* For dialog box for PDOC instructions */
+.bocc-btn, .btn-bocc {
+        	border: 1px solid #759dc0 !important;
+            padding: 0.3rem 0.5rem !important;
+            color: #000000;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+            -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+            background-color: #bcd8f4 !important;
+            background-image: url(form/images/buttonEnabled.png);
+            background-repeat: repeat-x;
+            background-image: -moz-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+            background-image: -webkit-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+            background-image: -o-linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+            background-image: linear-gradient(#ffffff 0px, rgba(255, 255, 255, 0) 3px, rgba(255, 255, 255, 0.75) 100%);
+            _background-image: none;
+        }
+        
+.helpText * { font-size: 1rem !important; }		/* For ALL instructions text  */
+
+ol.bocc-ol-parenthesis {
+	counter-reset: list;
+}
+ol.bocc-ol-parenthesis > li {
+	list-style: none;
+	counter-increment: list;
+	margin-bottom: .5rem;
+}
+ol.bocc-ol-parenthesis > li:before {
+	content: "(" counter(list, lower-alpha) ") ";
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    #boccBusAddress { display: none !important; }
+    .bocc-pdc-title, .bocc-pdc-content, #boccBusName { text-align: center !important; }
+    .bocc-pdc-title { padding-top: 0.9rem !important; }
+    #pdcMainSection { background-size: 90% !important; }
+    #boccFiscalYearText { display: none !important; }
+    #boccPdcRevisedDate { padding-top: 20px !important; text-align: center !important; }
+    #cdcButtonsDiv { margin-bottom: 2.5rem !important; }
+    #pdcDueDateText, #pdcTopTitle { font-size: 1.2rem !important; }
+    #cbhsSubmitCDCDlg .dijitDialogPaneContent { height: auto !important; width: 100% !important; }
+    
+    .bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='10%' y='6%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='40'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='10%' y='6%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='40'>EXCLUDED</text></svg>");
+	}
+	
+	.modal-dialog { max-width: none !important; }	/* For dialog box for PDOC instructions */
+	
+	.bocc-qrcode-prg {
+		position: relative;
+    	margin-top: auto;
+	}
+}
+
+
+
+/* Galaxy Fold */
+@media screen and (min-width: 280px) and (max-width: 653px) {
+	.bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='8%' y='9%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='30'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='8%' y='9%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='30'>EXCLUDED</text></svg>");
+	}
+}
+
+/* iPhone SE */
+@media 	screen and (min-width: 375px) and (max-width: 667px) {
+	.bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='10%' y='6%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='40'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='10%' y='6%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='40'>EXCLUDED</text></svg>");
+	}
+}
+
+/* iPad Mini in portrait & landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	#boccBusName { padding-left: 40px !important; }
+}
+
+/* iPad Mini in portrait only */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+	.bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='3%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='3%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>EXCLUDED</text></svg>");
+	}
+}
+
+/* iPad Mini in landscape only */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	.bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='15%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='15%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>EXCLUDED</text></svg>");
+	}
+}
+
+/* iPad Air in landscape only */
+@media only screen 
+and (min-device-width : 820px) 
+and (max-device-width : 1180px) 
+and (orientation : landscape) {
+	.bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='20%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='20%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>EXCLUDED</text></svg>");
+	}
+}
+
+
+/* Print operations */
+@media print {
+	.page-break	{ display: block; break-before: always; }
+	
+	div.page {
+			page-break-after: always;
+	}
+		
+	div.cdcPageBreaker {
+		height: 130px !important;
+	}
+	
+	.formToggle, .formDisclaimText, 
+	.formLeftHeading, .formHead3, .formRightHeading, .formUnitTitle, .formSubTitleDesc, .formDueDate, 
+	.formSelectionStyle, .formSelectedProg, .formSelectedLegend, .formDeclareSection {
+		font-size: 12px;
+	}
+	
+	.formPastDueNotice {
+		font-size: 18px;
+	}
+	
+	.formDisclaimSection {
+		font-size: 12px;
+	}
+	
+	.formContractDetails {
+		font-size: 8px;
+	}
+	
+	.formProgDetails {
+		float: left;
+		width: 40%;
+		font-size: 8px;
+	}
+		
+	.cdcTitle, .formDisclaimSection {
+		margin-bottom: 20px;
+	}
+	
+	.formLogo img {
+		width: 50px;
+		height: 50px;
+	}
+	
+	#boccBusName { padding-left: 1.5rem !important; }	/* PDOC forms top business name information  */
+	
+	.helpIcon, .formDisclaimSection, .formButtonsDiv, .noPrintSpan, #cdcSubmitButtonsDiv, #cdcButtonClose, #cdcButtonsDiv,
+	#Q0InstructionsReq, #Q1InstructionsReq, #Q2InstructionsReq, #Q3InstructionsReq {
+		display: none !important;
+	}
+	
+	.bocc-watermark-sample {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='15%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>SAMPLE FORM</text></svg>");
+	}
+	.bocc-watermark-excluded {
+		background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='15%' y='40%' transform='translate(20, 100) rotate(0)' fill='rgb(245,210,210)' font-size='100'>EXCLUDED</text></svg>");
+	}
+	
+    .modal-content * { visibility: visible; }
+    .modal-dialog { max-width: none !important; align-items: flex-start !important; }
+    
+    .modal-header, .modal-title, .bocc-btn, .fas, .x-close, .bocc-head-image { visibility: hidden; }
+    .bocc-help-top-title { display: block !important; visibility: visible !important; }
+}

@@ -1,0 +1,236 @@
+/* -------------------------------------- */
+/* (c) 2015 Netequal Technology Solutions */
+/* -------------------------------------- */
+
+.formHead2 {
+	display: block;
+	font-size: 1.0em;
+	font-weight: bold;
+	
+}
+
+.formHead3 {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+#mainCDCForm {
+	min-width: 1022px;
+}
+.formMainTitle {
+	float: left;
+	width: 100%;
+	min-width: 1022px;
+}
+
+.formLogo {
+	margin-top: 0px; margin-left: 10px; position: relative; float: left;
+}
+
+.formLeftHeading {
+	float: left; margin-left: 10px; width: 40%;
+}
+
+.formRightHeading {
+	float: right; margin-top: 0px; margin-right: 0px; width: 40%; text-align: right; font-size: 12px;
+}
+
+.formUnitTitle {
+	font-size: 14px; font-weight: bold;
+}
+
+.formSubTitle {
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+	min-width: 1022px;
+}
+
+.formDueDate {
+	font-size: 18px; color: red; margin-left: 100px;
+}
+
+.formToggle {
+	font-size: 22px; font-weight: bold;
+}
+
+.formProgDetails {
+	float: left;
+	margin-left: 10px;
+	/*width: 60%; */
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.formSubTitleDesc {
+	text-align: center; font-size: 14px; font-weight: bold; margin-top: -15px;
+}
+
+.formContractDetails {
+	width: 170px; float: left; text-align: right; font-size: 12px;
+}
+
+.formSelectedProg {
+	float: left; margin-top: 10px; width: 100%; text-align: center;
+}
+
+.formSelectedLegend {
+	float: left; width: 100%; text-align: center; font-size: 11px;
+}
+
+.formDisclaimSection {
+	float: left; margin-top: 10px; margin-bottom: 10px; text-align: center; font-size: 14px; font-weight: bold;
+}
+
+.formLeftSelections {
+	float: left; width: 50%;
+}
+
+.formRightSelections {
+	float: right; width: 49%;
+}
+
+.formSelectionStyle {
+	margin-left: 0px; margin-top: 5px; text-align: left; font-size: 12px;
+}
+
+.formAcceptStyle {
+	text-align: center; margin-top: 15px; margin-bottom: 15px; width: 100%;
+}
+
+.formSubmitStyle {
+	text-align: center; margin-top: 15px; width: 100%;
+}
+
+.formDisclaimText {
+	text-align: justify; margin-left: 20px; margin-right: 20px; font-size: 12px; font-weight: bold;
+}
+
+.formInitColumn {
+	width: 5%; border: 1px solid #000; font-weight: bold; text-align: center;
+}
+
+.formDeclareSection {
+	margin-top: 20px; font-size: 12px; text-align: justify;
+}
+
+.formSignSection {
+	margin-top: 80px; width: 100%;
+}
+
+.formAuthorizeSignature {
+	float: left; width: 49%;
+}
+
+.formAuthorizeTitle {
+	float: left; width: 30%; margin-top: 0px;
+}
+
+.formAuthorizeDate {
+	float: left; width: 19%; margin-top: 0px;
+}
+
+.formRevLeft {
+	float: left; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 9px; color: gray;
+}
+
+.formRevRight {
+	float: right; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 9px; color: gray;
+}
+
+.formPastDueNotice {
+	float: left;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: red;
+}
+
+.formButtonsDiv {
+	display: block;
+}
+
+/* -------------------------------------- */
+/* Contractors and Programs Updates		  */
+/* -------------------------------------- */
+.inputFldSmall {
+	background: url("../../img/inputbg_sm.png") no-repeat scroll 0 0 transparent;
+	width: 135px;
+	color: #666666;
+	height: 15px;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+.inputFldWarningSmall {
+	background: url("../../img/input_red_bg_sm.png") no-repeat scroll 0 0 transparent;
+	width: 135px;
+	color: #666666;
+	height: 15px;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+.inputFld {
+	background: url("../../img/inputbg.png") no-repeat scroll 0 0 transparent;
+	width: 335px;
+	color: #666666;
+	height: 15px;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+.inputTextFld {
+	background: url("/img/inputtextbg.png") no-repeat scroll 0 0 transparent;
+	width: 335px;
+	color: #666666;
+	height: 80px;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+.inputFldWarning {
+	background: url("../../img/input_red_bg.png") no-repeat scroll 0 0 transparent;
+	width: 335px;
+	color: #666666;
+	height: 15px;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+.selectFld {
+	background: url("../../img/inputbg.png") no-repeat scroll 0 0 transparent;
+	width: 350px;
+	height: 35px;
+	color: #666666;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+.selectFldWarning {
+	background: url("../../img/input_red_bg.png") no-repeat scroll 0 0 transparent;
+	width: 350px;
+	height: 35px;
+	color: #666666;
+	margin-bottom: 5px;
+	padding: 8px;
+	border: medium none;
+}
+
+
+.formContractDetailsUpdates {
+	margin-top: 8px;
+}
+

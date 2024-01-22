@@ -1,0 +1,116 @@
+	
+	ol { 
+		list-style-type: decimal; 
+		list-style-position: outside !important; 
+	}
+	
+	p {
+		text-align: justify;
+	}
+	
+	.art-BlockContent-body ul li {
+		background-image: none;
+		font-family:Tahoma,Arial,Helvetica,Sans-Serif;
+		font-size:14px;
+		line-height:1em;
+		padding:0 0 0 5px;
+		margin-bottom: 10px;
+	}
+
+	.helpTitle {
+		float: left;
+		width: 100%;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		text-decoration: underline;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	
+	
+	.helpText {
+		float: left;
+		font-size: 14px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+ol.bocc-ol-parenthesis {
+	counter-reset: list;
+}
+ol.bocc-ol-parenthesis > li {
+	list-style: none;
+	counter-increment: list;
+	margin-bottom: .5rem;
+}
+ol.bocc-ol-parenthesis > li:before {
+	content: "(" counter(list, lower-alpha) ") ";
+}
+	
+
+	@media print {
+		@page {
+			counter-increment: pages;
+			@bottom-center {
+				font-family: Times, Palatino, serif;
+				font-size: 12pt;
+				font-weight: normal;
+				content: "Page " counter(pages);
+			}
+		}
+		
+		.art-Block-body {
+			overflow: hidden !important;
+			height: auto !important;
+		}
+		
+		div.pageBreak {
+			page-break-after: always;
+		}
+		
+		.helpTitle {
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+		
+		.helpText {
+			font-family:Tahoma,Arial,Helvetica,Sans-Serif;
+			font-size: 12px;
+		}
+		.art-BlockContent-body .helpText ul li {
+			font-weight: normal !important;
+		}
+
+	
+	
+		.helpText ul li, .helpText ol li {
+			font-weight: normal !important;
+			font-size: 12px !important;
+		}
+		
+		.page-break	{ page-break-before: always !important; }
+		
+		#sectionAdmBinder { page-break-before: always; }
+		
+	}
+
+/*------------------------------*/
+/* All Descriptions             */
+/*------------------------------*/
+
+	.bhs-item-harm {
+		margin-left: 25px; margin-bottom: 10px; text-align: justify;
+	}	
+	.bhs-item-harm ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.bhs-item-harm li {
+		padding-left: 25px !important;
+		text-indent: -10px !important;
+	}	
+	.bhs-item-harm li:before {
+		content: "-" !important;
+	}
